@@ -1,0 +1,133 @@
+Ant-v2:
+  # training
+  n_training_threads: 16
+  use_proper_time_limits: True 
+  eval_episodes: 10
+
+  # algo-ppo
+  num_mini_batch: 1
+  gain: 0.01
+  adv: 'gae'
+  gae_lambda: 0.93
+  
+  # network
+  use_recurrent_policy: True
+  stacked_frames: 1
+  layer_after_N: 1
+  layer_N: 2
+  mu_tanh: True
+  log_std_init: -0.5
+  action_aggregation: "mean"
+  gaussian_version: 3
+  
+  # seq
+  share_policy: False
+  use_cum_sequence: False
+  use_agent_block: False
+  use_sequential: True
+
+  # lora
+  train_w0: 0
+  train_lora: 1
+  train_lora_bias: 0
+
+Walker2d-v2:
+  # training
+  n_training_threads: 16
+  use_proper_time_limits: True 
+  eval_episodes: 10
+
+  # algo-ppo
+  num_mini_batch: 1
+  gain: 0.01
+  adv: 'gae'
+  gae_lambda: 0.93
+  
+  # network
+  use_recurrent_policy: True
+  stacked_frames: 1
+  layer_after_N: 1
+  layer_N: 2
+  mu_tanh: True
+  log_std_init: -0.5
+  action_aggregation: "mean"
+  gaussian_version: 3
+
+  # seq
+  share_policy: False
+  use_cum_sequence: False
+  use_agent_block: False
+  use_sequential: True
+
+  # lora
+  train_w0: 0
+  train_lora: 1
+  train_lora_bias: 0
+
+
+HalfCheetah-v2:
+  # training
+  n_training_threads: 16
+  use_proper_time_limits: True 
+  eval_episodes: 10
+
+  # algo-ppo
+  num_mini_batch: 1
+  gain: 0.01
+  adv: 'gae'
+  gae_lambda: 0.93
+  
+  # network
+  use_recurrent_policy: True
+  stacked_frames: 1
+  layer_after_N: 1
+  layer_N: 2
+  mu_tanh: True
+  log_std_init: -0.5
+  action_aggregation: "mean"
+  gaussian_version: 3
+  
+  # seq
+  share_policy: False
+  use_cum_sequence: False
+  use_agent_block: False
+  use_sequential: True
+
+  # lora
+  train_w0: 0
+  train_lora: 1
+  train_lora_bias: 0
+
+
+Humanoid-v2:
+  # training
+  n_training_threads: 16
+  use_proper_time_limits: True 
+  eval_episodes: 10
+
+  # algo-ppo
+  num_mini_batch: 1
+  gain: 0.01
+  adv: 'gae'
+  gae_lambda: 0.9
+  
+  # network
+  use_recurrent_policy: True
+  stacked_frames: 1
+  layer_after_N: 1
+  layer_N: 2
+  mu_tanh: True
+  log_std_init: -0.5
+  action_aggregation: "mean"
+  gaussian_version: 3
+
+  # seq
+  share_policy: False
+  use_cum_sequence: False
+  use_agent_block: False
+  use_sequential: True
+
+  # lora
+  train_w0: 0
+  train_lora: 1
+  train_lora_bias: 0
